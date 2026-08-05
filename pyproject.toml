@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devmath"
+version = "0.1.0"
+description = "A reusable mathematics library for Python."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+authors = [
+    { name = "Tejas Jadhav", email = "studio.codtejss@gmail.com" }
+]
+
+keywords = [
+    "math",
+    "mathematics",
+    "geometry",
+    "algebra",
+    "statistics",
+    "python",
+    "library"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics"
+]
+
+[project.urls]
+Homepage = "https://github.com/devtejss/devmath"
+Repository = "https://github.com/devtejss/devmath"
+Issues = "https://github.com/devtejss/devmath/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["devmath*"]
